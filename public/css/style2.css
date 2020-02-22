@@ -1,0 +1,111 @@
+html {
+  background-color: #696969;
+}
+
+header {
+  top: 0px;
+  min-height: 135px;
+  padding: 8px 0;
+}
+
+h1 {
+  font-size: 40px;
+  padding: 0px 16px;
+  min-height: 45px;
+  min-width: 650px;
+  text-align: center;
+  font-family: Comic Sans MS;
+  color: #BEBEBE;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: rgb(190, 140, 32);
+}
+
+body {
+  color: #333333;
+  background-color: #FFFAFA;
+  font-family: Arial;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 0px;
+  min-height: 100vh;
+}
+
+.main-content {
+  height: 135px;
+  min-height: 135px;
+  max-height: 135px;
+  background-color: #424242;
+}
+
+.body-content {
+  position: absolute;
+  top: 172px;
+  padding: 0 16px;
+  min-height: 600px;
+}
+
+form {
+  width: 668px;
+  min-height: 300px;
+  padding: 30px 0px;
+  /* display:flex;
+  flex-direction: column; */
+}
+
+input {
+  border: 1px solid #cccccc;
+  padding: 8px;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid #888888;
+  background: #888888;
+  color: white;
+  padding: 8px;
+}
+
+footer {
+  color: #888888;
+  border-top: 1px solid #BEBEBE;
+  background-color: #FFFAFA;
+  padding: 15px 16px;
+  width: 668px;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+}
+
+footer p {
+  line-height: 10px;
+}
+
+.perfil {
+  width: 200px;
+}
