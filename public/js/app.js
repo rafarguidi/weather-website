@@ -5,9 +5,6 @@ const search = document.querySelector('input')
 const menssagem1 = document.querySelector('#message-1')
 const menssagem2 = document.querySelector('#message-2')
 
-// menssagem1.textContent = ''
-// menssagem2.textContent = ''
-
 weatherForm.addEventListener('submit', (event) => {
   event.preventDefault()
 
@@ -15,7 +12,7 @@ weatherForm.addEventListener('submit', (event) => {
   menssagem1.textContent = 'Carregando...'
   menssagem2.textContent = ''
 
-  fetch('http://localhost:3000/ptempo?endereco=' + encodeURIComponent(location)).then((response) => {
+  fetch('/ptempo?endereco=' + encodeURIComponent(location)).then((response) => {
     response.json().then((data) => {
       if (data.error) {
         menssagem1.textContent = data.error

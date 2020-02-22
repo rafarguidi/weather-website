@@ -4,6 +4,9 @@ const hbs = require('hbs')
 const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
 
+// Configurando porta do Heroku
+const port = process.env.PORT || 3000
+
 // Utilizando função Express
 const app = express()
 
@@ -72,6 +75,6 @@ app.get('/*', (req, res) => {
   })
 })
 
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log('Aplicação rodando...')
 })
