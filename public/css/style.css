@@ -84,6 +84,19 @@ button:hover {
   background-color: #949494;
 }
 
+.result-column1 {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.result-column2 {
+  display: inline-block;
+}
+
+#icon-weather {
+  width: 3rem;
+}
+
 #message-1,
 #message-2 {
   font-size: 1.2rem;

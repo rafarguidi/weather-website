@@ -10,6 +10,7 @@ const forecast = (latitude, longitude, callback) => {
             callback('Não foi possível encontrar o local informado.', undefined)
         } else {
             callback(undefined, {
+                icone: body.daily.data[0].icon,
                 sumario: body.daily.data[0].summary,
                 temperatura: body.currently.temperature,
                 probabilidade_chuva: (body.currently.precipProbability * 100) + '%'
