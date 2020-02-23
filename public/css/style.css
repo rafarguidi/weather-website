@@ -1,3 +1,7 @@
+* {
+  font-size: 10px;
+}
+
 html {
   background-color: #333333;
 }
@@ -5,15 +9,19 @@ html {
 body {
   color: #333333;
   font-family: Arial;
-  max-width: 650px;
+  max-width: 65rem;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 1.6rem;
   background-color: #fff;
   border-radius: 10px;
 
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+body p {
+  font-size: 1.4rem;
 }
 
 .main-content {
@@ -23,38 +31,43 @@ body {
 footer {
   color: #888888;
   border-top: 1px solid #eeeeee;
-  margin-top: 16px;
-  padding: 16px 0;
+  margin-top: 1.6rem;
+  padding: 1.6rem 0;
+}
+
+.menu-navi a {
+  font-size: 1.6rem;
 }
 
 header {
-  margin-top: 16px;
-  margin-bottom: 48px;
+  margin-top: 1.6rem;
+  margin-bottom: 4.8rem;
 }
 
 h1 {
-  font-size: 48px;
-  margin-bottom: 16px;
+  font-size: 4.8rem;
+  margin-bottom: 1.6rem;
 }
 
 header a {
   color: #888888;
-  margin-right: 16px;
+  margin-right: 1.6rem;
   text-decoration: none;
 }
 
 .portrait {
-  width: 150px;
+  width: 15rem;
 }
 
 .form-search {
-  margin-bottom: 50px;
+  margin-bottom: 5rem;
 }
 
 input {
   border: 1px solid #cccccc;
-  padding: 8px;
+  padding: .8rem;
   border-radius: 5px;
+  font-size: 1.4rem;
 }
 
 button {
@@ -62,8 +75,9 @@ button {
   border: 1px solid #888888;
   background: #888888;
   color: #ffffff;
-  padding: 8px;
+  padding: .8rem;
   border-radius: 5px;
+  font-size: 1.4rem;
 }
 
 button:hover {
@@ -72,5 +86,5 @@ button:hover {
 
 #message-1,
 #message-2 {
-  font-size: 12px;
+  font-size: 1.2rem;
 }
