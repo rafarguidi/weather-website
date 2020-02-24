@@ -13,7 +13,7 @@ const forecast = (latitude, longitude, callback) => {
                 icone: body.daily.data[0].icon,
                 sumario: body.daily.data[0].summary,
                 temperatura: body.currently.temperature,
-                probabilidade_chuva: (body.currently.precipProbability * 100) + '%'
+                probabilidade_chuva: parseFloat((body.currently.precipProbability * 100).toFixed(2)) + '%'
             })
         }
     })
